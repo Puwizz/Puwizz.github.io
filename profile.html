@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profile</title>
+    <style>
+      
+
+      body {
+        margin: 0;
+        padding: 0;
+        background: url(./Image/bg2.jpg) no-repeat;
+        background-size: 2500px;
+        height: 60%;
+      }
+      button {
+        padding: 20px 50px;
+        font-size: 1.5rem;
+        cursor: pointer;
+        border: 0px;
+        background: transparent;
+        position: relative;
+        margin: 20px;
+        transition: all 0.25s ease;
+      }
+      .container {
+        border-radius: 5%;
+        width: 525px;
+        background-color: rgba(163, 162, 162, 0.778);
+        padding: 25px;
+        text-align: center;
+        margin: 0 auto;
+        
+        font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+          "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+      }
+      article {
+        color: rgb(20, 20, 20);
+        font-size: 1.25rem;
+      }
+      .button {
+        display: flex;
+        justify-content: center;
+      }
+
+      .btn-2 {
+        display: inline-block;
+
+        margin-bottom: 20px;
+        overflow: hidden;
+        color: #fff;
+        border-radius: 30px;
+        box-shadow: 0px -0px 0px 0px rgba(143, 64, 248, 0.5),
+          0px 0px 0px 0px rgba(39, 200, 255, 0.5);
+      }
+      .btn-2:hover {
+        transform: translate(0, -6px);
+        box-shadow: 10px -10px 25px 0px rgba(143, 64, 248, 0.25),
+          -10px 10px 25px 0px rgba(39, 200, 255, 0.25);
+      }
+      .btn-2:hover::after {
+        transform: rotate(150deg);
+      }
+      .btn-2::after {
+        content: "";
+        width: 400px;
+        height: 400px;
+        position: absolute;
+        top: -50px;
+        left: -100px;
+        background-color: #ff3cac;
+        background-image: linear-gradient(
+          225deg,
+          #27d86c 3%,
+          #26caf8 50%,
+          #c625d0 100%
+        );
+        z-index: -1;
+        transition: all 0.5s ease;
+      }
+      .container-btn {
+        display: flex;
+        justify-content: center;
+      }
+      #img {
+        border-radius: 10%;
+      }
+      header {
+        font-size: 1.5rem;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        letter-spacing: 5px;
+        display: flex;
+        justify-content: center;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Hello!</h1>
+    </header>
+    <section class="container">
+      <article class="article">
+        <img src="./Image/profile.png" alt="profile" id="img" width="300px" />
+
+        <p>Name : Puwit Tubtimngam</p>
+        <p>Nickname : Pu (ภู)</p>
+        <p>Code Camp #12</p>
+        <p>Domicile : Surin province</p>
+        <p><ins>Skills</ins></p>
+        <p>Computer, Mathematics, Emotional Intelligence, Adaptability</p>
+        <img src="./Image/Com.png" alt="Computer" width="100px" />
+        <img src="./Image/Math.png" alt="Math" width="100px" />
+        <img src="./Image/Emotional.png" alt="Emotional" width="100px" />
+        <img src="./Image/Adaptability.png" alt="Adaptability" width="100px" />
+        <p><ins>Hobbies</ins></p>
+        <p>reading books,jogging,listening to music</p>
+        <img src="./Image/Reading.png" alt="Reading books" width="100px" />
+        <img src="./Image/jogging.png" alt="jogging" width="100px" />
+        <img
+          src="./Image/Listening.png"
+          alt="Listening to music"
+          width="100px"
+        />
+      </article>
+    </section>
+
+    <article class="container-btn">
+      <a href="index.html">
+        <button class="btn-2">Index</button>
+      </a>
+      <a href="friends.html">
+        <button class="btn-2">Friends</button>
+      </a>
+    </article>
+  </body>
+</html>

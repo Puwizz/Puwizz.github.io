@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <script src=""></script>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Index</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        background: url(./Image/bg.png) no-repeat;
+        background-size: 2000px;
+        height: 60%;
+      }
+
+      button {
+        padding: 20px 50px;
+        font-size: 1.5rem;
+        cursor: pointer;
+        border: 0px;
+        background: transparent;
+        position: relative;
+        margin: 20px;
+        transition: all 0.25s ease;
+      }
+
+      .box {
+        width: 459px;
+        background-color: rgba(163, 162, 162, 0.681);
+        padding: 30px;
+        text-align: center;
+        margin: auto;
+        margin-top: 2.5%;
+        color: rgb(20, 20, 20);
+        font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+          "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+      }
+      .box-img {
+        border-radius: 50%;
+        width: 200px;
+        height: 200px;
+      }
+      .box h1 {
+        font-size: 40px;
+        letter-spacing: 5px;
+        font-weight: 100;
+      }
+      .box h5 {
+        font-size: 25px;
+        letter-spacing: 4px;
+        font-weight: 100;
+      }
+      .box p {
+        font-size: 25px;
+        font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+          "Lucida Sans", Arial, sans-serif;
+        font-style: italic;
+      }
+
+      .container {
+        display: flex;
+        justify-content: center;
+      }
+
+      .btn-1 {
+        display: inline-block;
+
+        margin-bottom: 20px;
+        overflow: hidden;
+        color: #fff;
+        border-radius: 30px;
+        box-shadow: 0px -0px 0px 0px rgba(143, 64, 248, 0.5),
+          0px 0px 0px 0px rgba(39, 200, 255, 0.5);
+      }
+      .btn-1:hover {
+        transform: translate(0, -6px);
+        box-shadow: 10px -10px 25px 0px rgba(143, 64, 248, 0.25),
+          -10px 10px 25px 0px rgba(39, 200, 255, 0.25);
+      }
+      .btn-1:hover::after {
+        transform: rotate(150deg);
+      }
+      .btn-1::after {
+        content: "";
+        width: 400px;
+        height: 400px;
+        position: absolute;
+        top: -50px;
+        left: -100px;
+        background-color: #ff3cac;
+        background-image: linear-gradient(
+          225deg,
+          #27d86c 3%,
+          #26caf8 50%,
+          #c625d0 100%
+        );
+        z-index: -1;
+        transition: all 0.5s ease;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">
+      <img
+        src="./Image/index.png"
+        style="height: 10rem"
+        alt=""
+        class="box-img"
+      />
+      <h1>Puwit Tubtimngam</h1>
+      <h5>
+        Try not to become a person of success, but rather try to become a person
+        of value.
+      </h5>
+      <p><strong>—Albert Einstein—</strong></p>
+    </div>
+
+    <div class="container">
+      <a href="profile.html">
+        <button class="btn-1">Profile</button>
+      </a>
+      <a href="friends.html">
+        <button class="btn-1">Friends</button>
+      </a>
+    </div>
+  </body>
+</html>
