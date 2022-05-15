@@ -17,14 +17,21 @@
         font-family: "Mitr";
       }
       
-      
+      body {
+        margin: 0;
+        padding: 0;
+        background: url(./Image/bg3.jpg) no-repeat;
+        background-size: cover;
+        height: 100%;
+      }
       .card {
         font-family: "Mitr", sans-serif;
         text-align: center;
+        color: #fff;
       }
       .container {
         width: 500px;
-        background-color: rgba(163, 162, 162, 0.574);
+        background-color: rgba(0, 0, 0, 0.212);
         padding: 30px;
         text-align: center;
         margin: auto;
@@ -55,13 +62,16 @@
       .Mytable tbody tr:nth-of-type(even){
           background-color: #f3f3f3;
       }
+      .Mytable tbody tr:nth-of-type(odd){
+          color: rgb(255, 254, 254);
+      }
       .Mytable tbody tr:last-of-type{
           border-bottom: 5px solid rgba(9, 53, 124, 0.773);
 
       }
       .Mytable tbody tr.active-row {
           font-weight: bold;
-          color: #c625d0;
+          color: #3300ff;
        }
        .article {
            display: flex;
@@ -117,8 +127,9 @@
         width: 80%;
             height: auto;
             max-width: 400px;
-            
             margin-bottom: 5px;
+            display: block;
+            margin: auto;
       }
       
       
@@ -130,7 +141,7 @@
         <h1>Friends List</h1>
       </div>
     </header>
-    <center><img src="./Image/Codecamp.png" alt="" width="200px" id="img"></center>
+    <img src="./Image/Codecamp.png" alt="" width="200px" id="img">
     <section class="container">
       <article class="article">
           
